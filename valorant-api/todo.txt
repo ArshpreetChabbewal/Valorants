@@ -1,0 +1,5 @@
+
+TODO: Generate a list of all tournaments using api
+
+TODO: Given a tournament, generate a list of all matches played in that tournament (just need both teams and their logos)
+

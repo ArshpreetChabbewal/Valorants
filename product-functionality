@@ -1,0 +1,57 @@
+Logged in:
+
+Can sort through matches by tournaments and teams playing
+
+Can scroll infinitely
+
+Can see a pinned and home tab at the top, as well as an account settings button on the left, and the name of the product on the right
+
+Can pin matches
+
+Can see a schedule and navigate to matches that way (Maybe later)
+
+As we scroll down, all the buttons in the header move to a side bar (Maybe later)
+
+Notifications for matches that have just been played, as well as pinned matches (Maybe later)
+
+Matches on the main screen do not show winner, only the two teams who are playing, with their logos on either side, a see through bigger logo on them, and the team names,
+we also see number of likes and comments, and a button to pin the match
+
+---
+
+Not Logged In:
+
+Can sort through matches by tournaments and teams playing
+
+Can scroll infinitely
+
+Can pin matches
+
+Can see a schedule and navigate to matches that way (Maybe later)
+
+As we scroll down, all the buttons in the header move to a side bar (Maybe later)
+
+Matches on the main screen do not show winner, only the two teams who are playing, with their logos on either side, a see through bigger logo on them, and the team names,
+we also see number of likes and comments
+
+---
+
+Match Details Screen:
+
+On Logged In:
+
+    - We can add comments, reply to comments, and like comments
+
+    - We see the results of the match, simply who won, and the overall score in the BO1/3/5
+
+    - We also see a youtube vod of the match
+
+On Not Logged In:
+
+    - We see the results of the match, simply who won, and the overall score in the BO1/3/5
+
+    - We also see a youtube vod of the match
+
+---
+
+Register Screen
