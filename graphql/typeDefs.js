@@ -9,7 +9,7 @@ module.exports = gql`
     comments: [Comment]!
     likes: [Like]!
     likeCount: Int!
-    commentCount: Int! 
+    commentCount: Int!
   }
   type Comment {
     id: ID!
@@ -29,7 +29,7 @@ module.exports = gql`
     username: String!
     createdAt: String!
   }
-  input ResgisterInput {
+  input RegisterInput {
     username: String!
     password: String!
     confirmPassword: String!
@@ -37,15 +37,15 @@ module.exports = gql`
   }
   type Query {
     getPosts: [Post]
-    getPost(postIdL ID!): Post
+    getPost(postId: ID!): Post
   }
   type Mutation {
-    register(registerInput: ResgisterInput): User!
+    register(registerInput: RegisterInput): User!
     login(username: String!, password: String!): User!
     createPost(body: String!): Post!
     deletePost(postId: ID!): String!
     createComment(postId: String!, body: String!): Post!
-    deleteComment(postId: String!, commentId: ID!): Post!
+    deleteComment(postId: ID!, commentId: ID!): Post!
     likePost(postId: ID!): Post!
   }
   type Subscription {

@@ -10,7 +10,7 @@ module.exports = {
       if (body.trim() === "") {
         throw new UserInputError("Empty comment", {
           errors: {
-            body: "Comment body must not be empty",
+            body: "Comment body must not empty",
           },
         });
       }
@@ -27,7 +27,6 @@ module.exports = {
         return post;
       } else throw new UserInputError("Post not found");
     },
-
     async deleteComment(_, { postId, commentId }, context) {
       const { username } = checkAuth(context);
 
@@ -40,7 +39,9 @@ module.exports = {
           post.comments.splice(commentIndex, 1);
           await post.save();
           return post;
-        } else throw new AuthenticationError("Action not allowed");
+        } else {
+          throw new AuthenticationError("Action not allowed");
+        }
       } else {
         throw new UserInputError("Post not found");
       }
